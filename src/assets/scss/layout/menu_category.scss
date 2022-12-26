@@ -1,0 +1,24 @@
+@import '../variable.scss';
+
+.category {
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 115px;
+        background: $point-color;
+        list-style: none;
+
+        h1 {
+            font-size: 13px;
+            color: #fff;
+        }
+    }
+    &__1dep {}
+    &__2dep {}
+    &__3dep {}
+    &__1dep-title {}
+    &__2dep-title {}
+    &__3dep-title {}
+}

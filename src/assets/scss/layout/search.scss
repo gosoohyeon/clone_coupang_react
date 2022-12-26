@@ -1,0 +1,58 @@
+@import '../variable.scss';
+
+$search-height : 39px;
+
+.search {
+    display: flex;
+    align-items: stretch;
+    border:3px solid $point-color;
+
+    &__category {
+        position: relative;
+        display: inline-block;
+        width: 135px;
+        
+        &-selected {
+            padding-left: 20px;
+            height: $search-height;
+            border-right: 1px solid #ddd;
+            line-height: $search-height;
+            list-style: none;
+        }
+        &-list {
+            position: absolute;
+            top:$search-height;
+            padding-left: 20px;
+            border: 1px solid #ddd;
+            background: #fff;
+        }
+    }
+    &__box {
+        position: relative;
+        flex:1;
+    }
+    &__list {
+        position: absolute;
+        top: $search-height;
+        left:0;
+        width: 100%;
+        background: #fff;
+    }
+    &__list-title {}
+    &__input {
+        border:none;
+        width: 100%;
+        height: $search-height;
+    }
+    &__btn {
+        display: inline-block;
+        width: 30px;
+        height: $search-height;
+        &--voice {
+            background: blue;
+        }
+        &--search {
+            background: green;
+        }
+    }
+}

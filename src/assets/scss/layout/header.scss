@@ -1,0 +1,45 @@
+.header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-left: 110 + 30px;
+    height: 115px;
+
+    &__category {
+     position: absolute;
+     top:0;
+     left:0;   
+    }
+    &__logo {
+        margin-right: 20px;
+        width: 174px;
+        height: 41px;
+        background: pink;
+    }
+    &__search {
+        flex-grow: 1;
+        flex-basis: auto;
+        flex-shrink: 0;
+    }
+    &__btn {
+        width: 50px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        &--mycoupang {}
+        &--cart {}
+    }
+    &__aside-menu {
+        flex-basis: 100%;
+        width: 100%;
+
+        button {
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+    }
+    
+}
