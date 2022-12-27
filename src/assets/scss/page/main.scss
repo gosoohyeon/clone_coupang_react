@@ -1,0 +1,50 @@
+@import '../variable.scss';
+
+.mainBnr {
+    position: relative;
+    padding-top: 45px;
+    padding-left: calc(100vw - #{$page-width} / 2);
+    height: 450px;
+
+    &__item {
+        &:nth-of-type(even) {
+            .mainBnr__image {
+                background: purple;
+            }
+        }
+    }
+    &__image {
+        display: none;
+        position: absolute;
+        top:0;
+        left:calc(50% - 1200px / 2);
+        width: 1200px;
+        height: 450px;
+        background: #eee;
+
+        &--isActive {
+            display: block;
+        }
+    }
+    &__buttons {
+        position: absolute;
+        top:45px;
+        right: calc(50vw - #{$page-width} / 2 + 20px);
+        width:180px;
+    }
+    &__btn {
+        box-sizing: border-box;
+        width:180px;
+        height: 60px;
+        display: block;
+        color: #fff;
+        background: #000;
+        &:nth-of-type(even) {
+            background: purple;
+        }
+
+        &--isActive {
+            border:3px solid gold;
+        }
+    }
+}
