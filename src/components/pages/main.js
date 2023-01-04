@@ -1,6 +1,6 @@
-import 'assets/scss/page/main.scss';
 import { useEffect, useState } from 'react';
 
+import Category from './Category';
 
 
 function Main() {
@@ -32,6 +32,10 @@ function Main() {
             </div>
           </article>
           {/* E: 메인배너 */}
+
+          <div className="container">
+            <Category />
+          </div>
       </div>
     );
   }

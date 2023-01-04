@@ -1,0 +1,40 @@
+.product {
+    padding: 11px;
+    width: 182px;
+    height: 292px;
+    box-sizing: border-box;
+
+    &__image {
+        width: 160px;
+        height: 160px;
+        background: purple;
+    }
+    &__subject {
+        display: block;
+        margin-top: 3px;
+        font-size: 12px;
+        line-height: 1.3em;
+    }
+    &__side {
+        display: flex;
+        align-items: center;
+    }
+    &__price {
+        font-size: 11px;
+        strong {
+            font-size: 14px;
+        }
+    }
+    &__icon {
+        margin-left: 5px;
+        font-size: 12px;
+        font-weight: bold;
+
+        &--rocket {
+            color: skyblue;
+        }
+        &--zet {
+            color: orange;
+        }
+    }
+}

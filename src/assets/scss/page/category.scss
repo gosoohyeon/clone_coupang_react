@@ -1,0 +1,19 @@
+.mCate {
+    display: flex;
+    &__header {
+        width: 145px;
+    }
+    &__promotion {
+        width: 325px;
+        height: 600px;
+        background: pink;
+        
+        .swiper-slide {
+            width: 325px;
+            height: 600px;
+        }
+    }
+    &__list {
+        flex:1;
+    }
+}
